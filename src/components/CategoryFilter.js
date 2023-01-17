@@ -4,7 +4,11 @@ function CategoryFilter({categories,selectedCategory,onSelectCategory}) {
   const categoryButtons = categories.map((category) => {
     const className = category === selectedCategory ? "selected" : null;
     return (
-      <button key={category} className={className} onClick={() => onSelectCategory(category)} >{category}</button>
+      <button 
+       key={category} 
+       className={className} 
+       onClick={() => onSelectCategory(category)} >{category}
+      </button>
     );
   });
 
